@@ -1,8 +1,27 @@
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import Calculator from '~/src/calculator';
 
-const calc = new Calculator();
+class App extends Component {
+  constructor(props) {
+    super(props)
 
-console.log(calc.plus(7, 4));
-console.log(calc.minus(7, 4));
-console.log(calc.multiply(7, 4));
-console.log(calc.devide(7, 4));
+    this.state = { calc: new Calculator() };
+  }
+
+  render() {
+    const { calc } = this.state;
+    return (
+      <div>
+        <h1>Hello, World!</h1>
+        <br />
+        <p>132 * 68 = {calc.multiply(132, 68)}</p>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
+);
