@@ -6,11 +6,11 @@ class App extends Component {
   constructor(props) {
     super(props)
 
-    this.state = { calc: new Calculator() };
+    this.calc = new Calculator();
   }
 
   render() {
-    const { calc } = this.state;
+    const { calc } = this;
     return (
       <div>
         <h1>Hello, World!</h1>
