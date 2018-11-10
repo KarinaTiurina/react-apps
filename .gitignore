@@ -1,4 +1,11 @@
+# app1
 /app1/node_modules
 /app1/.cache
 /app1/dist
 /app1/package-lock.json
+
+# cash_voucher
+/cash_voucher/node_modules
+/cash_voucher/.cache
+/cash_voucher/dist
+/cash_voucher/package-lock.json
