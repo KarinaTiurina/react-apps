@@ -1,1 +1,4 @@
 /app1/node_modules
+/app1/.cache
+/app1/dist
+/app1/package-lock.json
